@@ -1,0 +1,6 @@
+<div class="search" [ngClass]="{'search-map' : onMap}">
+  <img src="assets/icons/search.svg" class="icon-image" />
+  <form>
+    <input type="text" name="search" [(ngModel)]="searchText" (input)="search()" placeholder="Search Restaurant">
+  </form>
+</div>

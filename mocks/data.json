@@ -1,0 +1,64 @@
+{
+  "restaurants": [
+    {
+      "id": 13306,
+      "title": "First Restaurant",
+      "image": "https://image.png",
+      "tags": [
+        "Arabic",
+        "Lebanese",
+        "Chinese"
+      ],
+      "rating": 0,
+      "location": {
+        "lat": "24.4539",
+        "lng": "54.3773"
+      }
+    },
+    {
+      "id": 13406,
+      "title": "Second Restaurant",
+      "image": "https://image.png",
+      "tags": [
+        "Arabic",
+        "Lebanese",
+        "Chinese"
+      ],
+      "rating": 0,
+      "location": {
+        "lat": "24.4448",
+        "lng": "54.3973"
+      }
+    },
+    {
+      "id": 13506,
+      "title": "Third Restaurant",
+      "image": "https://image.png",
+      "tags": [
+        "Arabic",
+        "Lebanese",
+        "Chinese"
+      ],
+      "rating": 0,
+      "location": {
+        "lat": "24.4648",
+        "lng": "54.4708"
+      }
+    },
+    {
+      "id": 13606,
+      "title": "Fourt Restaurant",
+      "image": "https://image.png",
+      "tags": [
+        "Arabic",
+        "Lebanese",
+        "Chinese"
+      ],
+      "rating": 0,
+      "location": {
+        "lat": "24.45048",
+        "lng": "54.4508"
+      }
+    }
+  ]
+}

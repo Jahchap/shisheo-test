@@ -1,0 +1,24 @@
+.restaurant {
+	 margin-bottom: 30px;
+}
+
+.restaurant-detail {	
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.restaurant-title {
+	margin: 0;
+}
+
+.restaurant-image {
+	width: 500px; 
+	height: 250px; 
+	background: red;
+	margin-bottom: 5px;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}

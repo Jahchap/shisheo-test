@@ -1,0 +1,12 @@
+<div class="content" role="main">
+    <app-search (searchRestaurants)="searchRestaurants($event)"></app-search>
+
+	<div *ngFor="let restaurant of myRestaurants">
+        <div>
+          <app-restaurant [restaurant]="restaurant"></app-restaurant>
+        </div>
+    </div>
+    
+    <div *ngIf="!myRestaurants.length">No restaurants found</div>
+ 
+</div>

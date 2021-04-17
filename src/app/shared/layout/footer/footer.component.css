@@ -1,0 +1,15 @@
+.footer {
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+    align-items: center;
+	justify-content: space-around;
+}
+
+@media screen and (max-width: 575px) {
+	.footer{
+		width: 50%;		
+		justify-content: space-between;
+	}
+}
+
