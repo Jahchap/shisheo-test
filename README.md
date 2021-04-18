@@ -20,4 +20,4 @@ There are two screens: The Homepage and The Map page
 
 #### The Map page
 * Displays the locations of the restaurants
-* To change the center of focus for the map page, open, `src/app/pages/map/map.component.ts` file and edit the latitude and longitude (i.e. `lat` and `lng`) properties of the `MapComponent` class. Currently, the center of focus is set to Abu Dhabi.
+* When the map page loads, it centers around a default location. To change the center of focus for the map page, open the`src/environments/environment.ts` if in development or `src/environments/environment.prod.ts` if in production and edit the respective latitude and longitude (i.e. `lat` and `lng`) properties. Currently, the center of focus is set to Abu Dhabi.

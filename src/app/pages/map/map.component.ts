@@ -3,6 +3,7 @@ import { latLng, MapOptions, tileLayer, Map, Marker, icon, LayerGroup } from 'le
 
 import { RestaurantService } from '../../shared/services/restaurant.service';
 import { Restaurant } from '../../shared/models/Restaurant';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-map',
@@ -11,8 +12,8 @@ import { Restaurant } from '../../shared/models/Restaurant';
 })
 export class MapComponent implements OnInit {
   map: Map;
-  lat = 24.4539;
-  lng = 54.3773;
+  lat: number = environment.lat;
+  lng: number = environment.lng;
   mapOptions: MapOptions;
   restaurants: Restaurant[];
   markerLayerGroup = new LayerGroup();
