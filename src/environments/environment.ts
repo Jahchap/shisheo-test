@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  lat: 24.4539,
+  lng: 54.3773
 };
 
 /*

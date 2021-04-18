@@ -1,3 +1,5 @@
 export const environment = {
-  production: true
+  production: true,
+  lat: 24.4539,
+  lng: 54.3773
 };
