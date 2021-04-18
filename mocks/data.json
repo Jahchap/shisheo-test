@@ -3,13 +3,13 @@
     {
       "id": 13306,
       "title": "First Restaurant",
-      "image": "https://image.png",
+      "image": "assets/images/item-1.jpg",
       "tags": [
         "Arabic",
         "Lebanese",
         "Chinese"
       ],
-      "rating": 0,
+      "rating": 2.5,
       "location": {
         "lat": "24.4539",
         "lng": "54.3773"
@@ -18,13 +18,13 @@
     {
       "id": 13406,
       "title": "Second Restaurant",
-      "image": "https://image.png",
+      "image": "assets/images/item-2.jpg",
       "tags": [
         "Arabic",
         "Lebanese",
         "Chinese"
       ],
-      "rating": 0,
+      "rating": 4,
       "location": {
         "lat": "24.4448",
         "lng": "54.3973"
@@ -33,13 +33,13 @@
     {
       "id": 13506,
       "title": "Third Restaurant",
-      "image": "https://image.png",
+      "image": "assets/images/item-3.jpg",
       "tags": [
         "Arabic",
         "Lebanese",
         "Chinese"
       ],
-      "rating": 0,
+      "rating": 3.5,
       "location": {
         "lat": "24.4648",
         "lng": "54.4708"
@@ -47,17 +47,32 @@
     },
     {
       "id": 13606,
-      "title": "Fourt Restaurant",
-      "image": "https://image.png",
+      "title": "Fourth Restaurant",
+      "image": "assets/images/item-4.jpg",
       "tags": [
         "Arabic",
         "Lebanese",
         "Chinese"
       ],
-      "rating": 0,
+      "rating": 4,
       "location": {
         "lat": "24.45048",
         "lng": "54.4508"
+      }
+    },
+    {
+      "id": 13706,
+      "title": "Fifth Restaurant",
+      "image": "assets/images/item-5.jpg",
+      "tags": [
+        "Arabic",
+        "Lebanese",
+        "Chinese"
+      ],
+      "rating": 4.5,
+      "location": {
+        "lat": "24.47048",
+        "lng": "54.4707"
       }
     }
   ]

@@ -1,5 +1,5 @@
 <div class="map">
-	<div id="map" leaflet [leafletOptions]="mapOptions" (leafletMapReady)="onMapReady($event)" style="z-index: -1;">
+	<div id="map" leaflet [leafletOptions]="mapOptions" (leafletMapReady)="onMapReady($event)">
 	</div>
 	<app-search (searchRestaurants)="searchRestaurants($event)"></app-search>
 </div>

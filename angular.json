@@ -34,7 +34,7 @@
               {
                 "glob": "**/*",
                 "input": "./mocks/images",
-                "output": "./assets/"
+                "output": "./assets/images/"
               }
             ],
             "styles": [
@@ -108,7 +108,7 @@
               {
                 "glob": "**/*",
                 "input": "./mocks/images",
-                "output": "./assets/"
+                "output": "./assets/images/"
               }
             ],
             "styles": [
