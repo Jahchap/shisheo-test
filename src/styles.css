@@ -1,12 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
-:host {
+body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-size: 14px;
-    color: #333;
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+    width: 90vw;
+    max-width: var(--fixed-width);
+    margin: 5rem auto;
 }
 
 h1,
@@ -17,123 +17,49 @@ h5,
 h6 {
     margin: 8px 0;
 }
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+h4 {
+    font-size: 0.875rem;
+}
 
 p {
     margin: 0;
+    font-size: 0.9em;
 }
-
-.toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: #fff;
-    color: #32bfc9;
-    font-weight: 600;
-    padding: 0 50px;
-    padding-top: 1em;
-}
-
-.toolbar img {
-    margin: 0 16px;
-}
-
-.content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
-}
-
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 16px;
-}
-
-.card {
-    border-radius: 4px;
-    border: 1px solid #eee;
-    background-color: #fafafa;
-    height: 40px;
-    width: 200px;
-    margin: 0 8px 16px;
-    padding: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s ease-in-out;
-    line-height: 24px;
-}
-
-.card-container .card:not(:last-child) {
-    margin-right: 0;
-}
-
-.card.card-small {
-    height: 16px;
-    width: 168px;
-}
-
-.card-container .card:not(.highlight-card) {
-    cursor: pointer;
-}
-
-.card-container .card:not(.highlight-card):hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-}
-
-.card-container .card:not(.highlight-card):hover .material-icons path {
-    fill: rgb(105, 103, 103);
-}
-
-.card.highlight-card {
-    background-color: #1976d2;
-    color: white;
-    font-weight: 600;
-    border: none;
-    width: auto;
-    min-width: 30%;
-    position: relative;
-}
-
-a,
-a:visited,
-a:hover {
-    color: #1976d2;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #125699;
-}
-
-.circle-link {
-    height: 40px;
-    width: 40px;
-    border-radius: 40px;
-    margin: 8px;
-    background-color: white;
-    border: 1px solid #eeeeee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: 1s ease-out;
-}
-
-.circle-link:hover {
-    transform: translateY(-0.25rem);
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+@media screen and (min-width: 800px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1.45rem;
+    }
+    h4 {
+        font-size: 1rem;
+    }
+    body {
+        font-size: 1rem;
+    }
+    h1,
+    h2,
+    h3,
+    h4 {
+        line-height: 1;
+    }
+    p {
+        margin: 0;
+        font-size: 1em;
+    }
 }
 
 footer {
@@ -146,40 +72,47 @@ footer {
     bottom: 0;
     left: 0;
     background-color: #efefef;
+    z-index: 9999;
 }
-
 footer a {
     display: flex;
     align-items: center;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 767px) {
-    .card-container > *:not(.circle-link),
-    .terminal {
-        width: 100%;
-    }
-
-    .card:not(.highlight-card) {
-        height: 16px;
-        margin: 8px 0;
-    }
+#map {
+    height: 92vh;
 }
 
-@media screen and (max-width: 575px) {
-    .toolbar {
-        padding: 0 2em;
-        padding-top: 1em;
-    }
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: #32bfc9;
+    padding: 0 50px;
+    padding-top: 1em;
+}
+.toolbar .logo {
+    /* margin: 0 16px; */
+    width: 100px;
+}
 
-    .toolbar img {
-        width: 110px;
-        height: auto;
-    }
+.content {
+    display: flex;
+    margin: 82px auto 32px;
+    margin-top: 150px;
+    padding: 0 16px;
+    max-width: 783px;
+    flex-direction: column;
+    align-items: center;
 }
 
 .search {
-    width: 100%;
+    width: 80%;
     max-width: 480px;
     padding: 10px;
     display: flex;
@@ -189,6 +122,12 @@ footer a {
     border: 1px solid gray;
     border-radius: 10px;
     background: #fff;
+    position: absolute;
+    top: 83px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9999;
 }
 
 .search form {
@@ -199,11 +138,86 @@ footer a {
     line-height: 1em;
     font-size: 1em;
     outline: transparent;
-    /* background: transparent; */
     border: none;
     margin-left: 5px;
 }
 
-.icon-image {
+.restaurant {
+    margin-bottom: 30px;
+}
+
+.restaurant-image {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    border-radius: 15px;
+    display: flex;
+}
+.restaurant-title {
+    margin: 0;
+    color: #615e5e;
+}
+.restaurant-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(102, 102, 102, 0.507);
+}
+.restaurant-detail .tags {
+    color: #3f3f3f;
+    font-weight: 500;
+}
+.restaurant-detail .discount {
+    color: #32bfc9;
+    font-weight: 500;
+}
+
+.icon {
     width: 20px;
+}
+
+.restaurant-detail .icon {
+    width: 12px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 575px) {
+    .toolbar {
+        padding: 0 2em;
+        padding-top: 1em;
+    }
+    .toolbar img {
+        width: 110px;
+        height: auto;
+    }
+
+    .restaurant-image {
+        height: 13em;
+    }
+}
+
+:root {
+    --star-size: 1.3em;
+    --star-color: #fff;
+    --star-background: #fc0;
+}
+
+.stars {
+    --percent: calc(var(--rating) / 5 * 100%);
+    display: inline-block;
+    font-size: var(--star-size);
+    font-family: Times;
+    line-height: 1;
+}
+.stars::before {
+    content: "★★★★★";
+    letter-spacing: 3px;
+    background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--star-background);
 }

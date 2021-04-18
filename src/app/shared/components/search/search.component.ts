@@ -1,43 +1,20 @@
-import { Component, OnInit, OnDestroy, Input, Output, EventEmitter } from '@angular/core';
-import { Router, NavigationStart } from '@angular/router';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css']
 })
-export class SearchComponent implements OnInit, OnDestroy {
-  onMap: boolean = false
-  // events
+export class SearchComponent implements OnInit {
+
   searchText: string;
   @Output('searchRestaurants') searchRestaurants: EventEmitter<any> = new EventEmitter();
 
-  constructor(private router: Router) {
-    if (this.router.url === "/map") {
-      this.onMap = true;
-    }
+  constructor() { }
 
-    // this.events = router.events
-    //   .subscribe(event => {
-    //     if (event instanceof NavigationStart) {
-    //       if (event.url === "/map") {
-    //         this.onMap = true;
-    //       }
-    //     }
-    //   });
-  }
-
-  ngOnInit(): void {
-
-  }
-
-  ngOnDestroy() {
-    // this.events.unsubscribe();
-    this.onMap = false
-  }
+  ngOnInit(): void { }
 
   search() {
-    this.searchRestaurants.emit(this.searchText)
+    this.searchRestaurants.emit(this.searchText);
   }
-
 }

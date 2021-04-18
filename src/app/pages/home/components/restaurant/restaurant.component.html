@@ -1,29 +1,26 @@
 <div class="restaurant">
-	<!-- <img src="restaurant.image" /> -->
-	<div class="restaurant-image">Image here</div>
-	<div class="restaurant-detail">
-		<h4 class="restaurant-title">{{restaurant.title}}</h4>
-		<h4 class="restaurant-title">{{restaurant.rating}}</h4>
+	<div>
+		<img class="restaurant-image" src="{{restaurant.image}}" />
 	</div>
 	<div class="restaurant-detail">
-		<p className="item-text">
-			<span *ngFor="let tag of restaurant.tags; index as indexOftag;">{{tag}}<span *ngIf="indexOftag !== restaurant.tags.length-1">, </span></span>
-		</p>
+		<h3 class="restaurant-title">{{restaurant.title}}</h3>
+		<h4 class="restaurant-title stars" [style]="rating"></h4>
+		<!-- <h4 class="restaurant-title" #stars></h4> -->
+		<!-- <h4 class="restaurant-title" [innerHTML]="rating"></h4> -->
+	</div>
+	<div class="restaurant-detail">
 		<p>
-			Delivery with 25 min
+			<span class="tags" *ngFor="let tag of restaurant.tags; index as indexOftag;"> {{tag}}<span
+					*ngIf="indexOftag !== restaurant.tags.length-1">, </span>
+			</span>
 		</p>
+		<p class> Delivery with 25 min </p>
+	</div>
+	<div class="restaurant-detail delivery">
+		<p class="item-text"> Delivery: AED 10 </p>
+		<p> Cash on Delivery </p>
 	</div>
 	<div class="restaurant-detail">
-		<p className="item-text">
-			Delivery: AED 10
-		</p>
-		<p>
-			Cash on Delivery
-		</p>
+		<p class="item-text discount"><img src="assets/icons/price-tag.svg" class="icon"> 20% off Selected items </p>
 	</div>
-	<div class="restaurant-detail">
-		<p className="item-text">
-			20% off Selected items
-		</p>
-	</div>		  
 </div>
